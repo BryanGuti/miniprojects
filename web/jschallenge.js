@@ -9,13 +9,17 @@ const subscriptionMessage = [
         subscriprionMessage: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año."},
 ]
 
-function mySubscription (chossenSubscription) {
+function findSubscription (chossenSubscription) {
     if (subscriptionMessage.some((sub) => sub.subscription  === chossenSubscription)){
-        let index = subscriptionMessage.map((sub) => sub.subscription).indexOf(chossenSubscription);
-        let message = subscriptionMessage[index].subscriprionMessage;
-        console.log(message);
+        let subscription = subscriptionMessage.find((sub) => sub.subscription === chossenSubscription);
+        let message = subscription.subscriprionMessage;
+        return message;
     }
     else{
-        console.log("Opción incorrecta.");
+        return "Opcion incorrecta."
     }
 }
+
+let userSubscription = prompt("Cuál es tu suscripción?");
+
+console.log(findSubscription(userSubscription));
