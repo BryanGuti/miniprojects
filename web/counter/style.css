@@ -27,32 +27,29 @@
     flex-direction: column;
 }
 
-/*
-#numberContainer {
-} */
-
 #buttonsContainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 #displayedNumber {
-    font-size: 100px;
+    font-size: 80px;
     font-family: 'Bangers', cursive;
 }
 
 .button {
-    font-size: 80px;
-    width: 100px;
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    width: 1.5em;
     border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
     background-color: rgba(242, 242, 242, 0.36);
     font-family: 'Bangers', cursive;
-
 }
 
 /* pseudoclasses */
