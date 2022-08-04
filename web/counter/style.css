@@ -1,6 +1,10 @@
-#mainContentContainer {
+html, body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+#mainContentContainer {
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: chocolate;
